@@ -1,0 +1,147 @@
+/* Universal Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body & Layout */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #dfe9f3, #ffffff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Container Styling */
+#root {
+  max-width: 700px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+nav a {
+  color: #0077cc;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Form */
+form label {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #0077cc;
+  color: white;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #005fa3;
+}
+
+/* Questions */
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #444;
+  text-align: center;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  background-color: #f2f2f2;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #e0f0ff;
+  border-color: #0077cc;
+}
+
+/* Results */
+.artwork {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.artwork img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.artwork h2 {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.artwork p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 4px 0;
+}
+
+button[data-option*="Red"]:hover {
+  background-color: #ffdddd;
+}
+
+button[data-option*="Blue"]:hover {
+  background-color: #ddeeff;
+}
+
+button[data-option*="Green"]:hover {
+  background-color: #ddffdd;
+}
+
+button[data-option*="Yellow"]:hover {
+  background-color: #ffffcc;
+}
